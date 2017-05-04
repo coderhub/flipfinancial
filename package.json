@@ -1,0 +1,27 @@
+{
+  "name": "flipfinancial",
+  "version": "0.1.0",
+  "description": "Financial spending tracker",
+   "engines": {
+    "node": "7.8.0"
+  },
+  "main": "server.js",
+  "author": "CarlosM",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.9.7",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderhub/flipfinancial.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
+}

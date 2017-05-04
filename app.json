@@ -1,0 +1,7 @@
+{
+  "name": "FlipFinancial",
+  "description": "Financial spending tracker using Express 4",
+  "repository": "https://github.com/coderhub/flipfinancial.git",
+  "logo": "http://FlipFinancial.herokuapp.com/imgs/logo.png",
+  "keywords": ["node", "express", "FlipFinancial"]
+}

@@ -1,0 +1,71 @@
+{
+  "links": {
+    "self": "http://example.com/transactions"
+  },
+  "data": [{
+      "type": "transaction",
+      "id": "1",
+      "attributes": {
+        "name": "Phone Bill",
+        "type": "Utilities",
+        "amount": "110.01",
+        "date": "04/03/2017",
+        "notes": "no notes"
+      }
+    }, {
+      "type": "transaction",
+      "id": "2",
+      "attributes": {
+        "name": "Taco Bell",
+        "type": "Food",
+        "amount": "10.95",
+        "date": "04/30/2017",
+        "notes": "no notes"
+      }
+    },
+    {
+      "type": "transaction",
+      "id": "3",
+      "attributes": {
+        "name": "Health Insurance",
+        "type": "Insurance",
+        "amount": "50.00",
+        "date": "04/30/2017",
+        "notes": "Payed late"
+      }
+    },
+    {
+      "type": "transaction",
+      "id": "4",
+      "attributes": {
+        "name": "Car Insurance",
+        "type": "Insurance",
+        "amount": "200.20",
+        "date": "03/23/2017",
+        "notes": "Payed late"
+      }
+    },
+    {
+      "type": "transaction",
+      "id": "5",
+      "attributes": {
+        "name": "Papa Johns",
+        "type": "Food",
+        "amount": "25.25",
+        "date": "03/13/2017",
+        "notes": "food for party"
+      }
+    },
+    {
+      "type": "transaction",
+      "id": "6",
+      "attributes": {
+        "name": "Dress shirt",
+        "type": "Clothing",
+        "amount": "55.25",
+        "date": "03/10/2017",
+        "notes": "no notes"
+      }
+    }
+  ]
+}

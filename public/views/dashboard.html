@@ -1,0 +1,44 @@
+<!-- Dashboard.html -->
+<div id="dashboard-container" class="container" ng-controller="dashController" >
+	<div class="container" ng-init="getTransactions()">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Dashboard</h2>
+                <h4>Transaction List</h4></p>
+            </div>
+            <div class="col-md-6">
+                <h2>A</h2>
+                <h4>Transaction Chart</h4>
+            </div>
+    </div>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-6">
+    			<ul class="transact-list">
+        			<li class="transact-list-item" ng-repeat="transaction in transactions" >
+        				
+        					<div class="transact-item-left">
+		        				<h3>{{transaction.attributes.name}}</h3>
+		        				<h4 ng-style={{getTypeStyle(transaction.attributes.type)}}>{{transaction.attributes.type}}</h4>
+		        			</div>
+		        			<div class="transact-item-right" >
+		        				<p>{{transaction.attributes.amount | currency}}</p>
+		        				<p>{{formatDate(transaction.attributes.date) | date:'MMM d, y'}}</p>
+		        				<p>{{transaction.attributes.notes}}</p>
+		        			</div>
+        				
+        			</li>
+        		</ul>
+    		</div>
+            <div class="col-md-6">
+                <div class="chart-view" ng-controller="PieCtrl">
+                    <div class="pie-chart" ng-init="calculateData()">
+                    <canvas id="pie" class="chart chart-pie" chart-data="data" chart-labels="labels" chart-options="options"></canvas>
+                    </div>
+                </div>
+
+            </div>
+    	</div>
+    </div>
+</div>
